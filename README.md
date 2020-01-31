@@ -9,3 +9,5 @@ Details can be found in the paper “Automated Essay Scoring with Discourse Awar
 Models can be downloaded at https://sites.google.com/site/nadeemf0755/research/automatic-essay-scoring
 
 For the two data sets, ASAP and TOEFL (LDC), the first step is to run the data parse scripts, either ASAP_dataparse.ipynb or TOEFL_dataparse.ipynb. After that the training or testing scripts can be run for all models except the ones that use BERT. For the models using BERT, the BERT preprocessing scripts should be run before the training or testing (BERT_text_representation.ipynb). 
+
+For BERT_text_representation, please initialize the service with pooling_strategy set to NONE, so that the BERT output is not pooled across tokens. 
